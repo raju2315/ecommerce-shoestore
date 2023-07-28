@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#">
+        <img
+          class="imagesize"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkBczc9IfeR4mEgyOHe1IxSLK1FOyUEZ22kg&usqp=CAU"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link size" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link size" href="#productSection">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link size" href="#cat">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link size" href="#new">New Arrivals</a>
+          </li>
+          <div>
+            <li class="nav-item">
+              <a class="nav-link size" href="#contact">Contact us</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="ml-auto">
+        <p>
+          <a href="#cart">
+            <img
+              class="imagesize1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkBczc9IfeR4mEgyOHe1IxSLK1FOyUEZ22kg&usqp=CAU"
+            />
+          </a>
+        </p>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://img.freepik.com/free-vector/realism-hand-drawn-horizontal-banner_23-2150203461.jpg?w=2000"
+            class="d-block w-100"
+            alt="Image 1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.sensear.com/hubfs/LTE/Wireless%20LTE%20Compatible%20Headset%20-%20Banner%20Slide.png"
+            class="d-block w-100"
+            alt="Image 2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.boat-lifestyle.com/cdn/shop/articles/Smartwatches-To-the-Rescue.jpg?v=1624990748"
+            class="d-block w-100"
+            alt="Image 3"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div>
+      <img
+        class="m"
+        src="https://www.mkaugaming.com/wp-content/uploads/2022/07/MKAU-Review-Banner-Outlier-Pro-Earbuds.png"
+      />
+    </div>
+
+    <div>
+      <h1 id="productSection" class="heading">Featured Products</h1>
+      <div class="imgs d-flex flex-row justify-content-between">
+        <img
+          src="https://img.freepik.com/premium-psd/gadget-concept-banner-template_23-2148626928.jpg?w=2000"
+        />
+        <img
+          src="https://m.media-amazon.com/images/I/61goypdjAYL._AC_UF1000,1000_QL80_.jpg"
+        />
+      </div>
+    </div>
+
+    <div>
+      <h1 id="cat" class="heading">Top Categories</h1>
+      <div class="d-flex flex-row">
+        <div class="m-5">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlLcZ5pBdeKg60IcaCk0W-_TgyA4H1VV-r__fTIR_TyL8K3Pr1IbK5aKgvBr7zU8NymJI&usqp=CAU"
+          />
+
+          <p class="sub-head text-center">LAPTOPS</p>
+          <div class="text-center">
+            <button id="runningBtn" class="btn btn-primary">shop Now</button>
+          </div>
+        </div>
+        <div class="m-5">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRexg5fYLo4SLB-XukWnZet4G2S4HLcKSlfQ&usqp=CAU"
+          />
+
+          <p class="sub-head text-center">HEADSETS</p>
+          <div class="text-center">
+            <button id="sportBtn" class="btn btn-primary">shop Now</button>
+          </div>
+        </div>
+
+        <div class="m-5">
+          <img
+            src="https://5.imimg.com/data5/MM/LH/KG/SELLER-83228540/apple-ipad-air-1-64gb-250x250.jpg"
+          />
+
+          <p class="sub-head text-center">TABS</p>
+          <div class="text-center">
+            <button id="apparelBtn" class="btn btn-primary">shop Now</button>
+          </div>
+        </div>
+        <div class="m-5">
+          <img
+           width="250" height="250" src="https://cdn1.smartprix.com/rx-iubm7WoCC-w1200-h1200/ubm7WoCC.jpg"/>
+
+          <p class="sub-head text-center">WATCHES</p>
+          <div class="text-center">
+            <button id="performanceBtn" class="btn btn-primary">shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1 id="new" class="heading">NEW ARRIVALS</h1>
+      <div class="d-flex flex-row">
+        <div>
+          <img
+            src="https://lh5.googleusercontent.com/p/AF1QipME177915jBDrknHug2I5XQTB2OQn3TCqxC-WUq"
+          />
+        </div>
+        <div>
+          <img
+            src="https://lh5.googleusercontent.com/p/AF1QipME177915jBDrknHug2I5XQTB2OQn3TCqxC-WUq"
+          /></div>
+          <div>
+            <img
+              src="https://lh5.googleusercontent.com/p/AF1QipME177915jBDrknHug2I5XQTB2OQn3TCqxC-WUq"
+            />
+          </div>
+        </div>
+    </div>
+    <h1 class="heading mt-4">RECOMMENDED PRODUCTS</h1>
+
+    <div class="d-flex flex-row justify-content-between">
+      <div class="bg shadow">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb9r9tiHXCEkQQAExQGFtHhF_1kBH3lzrx3A&usqp=CAU"
+          alt="Product 1"
+          class="image"
+        />
+        <h4>APPLE LAPTOP</h4>
+        <p class="main">
+        Apple 2023 MacBook Pro Laptop M2 Max chip with 12‑core CPU and 38‑core GPU: 33.74 cm (16.2-inch), 32GB Unified Memory, 1TB SSD Storage. Works with iPhone/iPad; Silver .
+        </p>
+        <p class="main">₹81,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Product 2"
+          class="image"
+        />
+        <h4>DELL LAPTOP</h4>
+        <p class="main">
+Dell XPS 15 9500 Laptop: Core i9-10885H, 32GB RAM, 1TB SSD, NVidia GTX 1650 Ti, 15.6" Full HD+ 500nit Display .
+        </p>
+        <p class="main">₹61,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="2">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Product 3"
+          class="image"
+        />
+        <h4>HP LAPTOP</h4>
+        <p class="main">
+          HP 15s-fq3071TU Intel Celeron N4500 15.6 Inches Entertainment Laptop (8GB/512GB SSD/Windows 11/Natural Silver/1.69 Kg)
+        </p>
+        <p class="main">₹60,889</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8qjajTKVtpJKGVPJCQaU5Cpo4y31COCJhw&usqp=CAU"
+          alt="Product41"
+          class="image"
+        />
+        <h4>ASUS</h4>
+        <p class="main">
+          Asus ROG Zephyrus M16 GX650PY-NM052WS AMD Ryzen 9 7945HX 16 Inches Gaming Laptop (32GB/2TB SSD/Windows 11/Black/2.67 Kg)
+        </p>
+        <p class="main">₹52,990</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-between">
+      <div class="bg shadow">
+        <img
+          src="https://m.media-amazon.com/images/I/61u1VALn6JL._AC_UF1000,1000_QL80_.jpg"
+          alt="Product 1"
+          class="image"
+        />
+        <h4>BOAT</h4>
+        <p class="main">
+          boAt Rockerz 450 is an on-ear wireless headset that has been ergonomically designed to meet the needs of music lovers. The headphones come equipped
+        </p>
+        <p class="main">₹2,199</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://m.media-amazon.com/images/I/71mY1A1godS.jpg"
+          alt="Product 2"
+          class="image"
+        />
+        <h4>SKULLCANDY</h4>
+        <p class="main">
+          Skullcandy Hesh ANC Wireless Over-Ear Headphones, Active Noise Cancelling, Wireless Charging 22 Hours Battery Life - Mob White
+        </p>
+        <p class="main">₹25,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="2">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://rukminim1.flixcart.com/image/850/1000/jb5e4y80/headphone/h/3/p/sony-wh-h900n-original-imafykgfxmafgena.jpeg?q=90"
+          alt="Product 3"
+          class="image"
+        />
+        <h4>SONY</h4>
+        <p class="main">
+          Sony WH-CH720N Active Noise Cancelling On the Ear Bluetooth Headset (Blue) Wireless Charging 22 Hours Battery Life
+        </p>
+        <p class="main">₹14,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://m.media-amazon.com/images/I/81X+UHkRWdL._AC_UF894,1000_QL80_.jpg"
+          alt="Product41"
+          class="image"
+        />
+        <h4>APPLE</h4>
+        <p class="main">
+          AppleCare+ for Headphones
+From ₹1375.00/mo.Per MonthFootnote◊◊orMRP ₹7900.00 (Incl. of all taxes)
+
+Get up to 2 years of unlimited repairs for accidental damage protection and additional tech support
+        </p>
+        <p class="main">₹59,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h2 id="cart">Cart</h2>
+      <div id="cart-items"></div>
+      <p>Total items in cart: <span id="cart-count">0</span></p>
+    </div>
+
+    <h1 class="follow-us-section-heading">Follow Us</h1>
+
+    <div class="d-flex flex-row justify-content-center">
+      <div class="follow-us-icon-container">
+        <i class="clr fab fa-twitter icon"></i>
+      </div>
+      <div class="follow-us-icon-container">
+        <i class="clr fab fa-instagram icon"></i>
+      </div>
+      <div class="follow-us-icon-container">
+        <i class="clr fab fa-facebook icon"></i>
+      </div>
+    </div>
+
+    <div id="contact" class="footer-section pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkBczc9IfeR4mEgyOHe1IxSLK1FOyUEZ22kg&usqp=CAU"
+              class="imagesize"
+            />
+            <h1 class="footer-section-mail-id">ordershoe@shoeshop.com</h1>
+            <p class="footer-section-address">
+              123 Hitec City, Hyderabad, India.
+            </p>
+            <p class="footer-section-address">
+              Contact details: 1800 3000 9009
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/20c5629a29.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

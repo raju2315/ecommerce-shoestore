@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <title>Running Shoes</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#">
+        <img
+          class="imagesize"
+          src="data:image/png;base64,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"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link size" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link size" href="#productSection">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link size" href="#cat">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link size" href="#new">New Arrivals</a>
+          </li>
+          <div>
+            <li class="nav-item">
+              <a class="nav-link size" href="#contact">Contact us</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="ml-auto">
+        <p>
+          <a href="#cart">
+            <img
+              class="imagesize1"
+              src="data:image/png;base64,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"
+            />
+          </a>
+        </p>
+      </div>
+    </nav>
+    <h1 class="heading mt-4">EAR BUDS</h1>
+
+    <div class="d-flex flex-row justify-content-between">
+      <div class="bg shadow">
+        <img
+          src="https://ezone-electronics.online/wp-content/uploads/2020/12/71zny7BTRlL._SL1500_.jpg"
+          alt="Product 1"
+          class="image"
+        />
+        <h4>APPLE BUDS</h4>
+        <p class="main">
+        Apple Airpods Pro True Wireless with MagSafe Charging Case Bluetooth Headset (White)
+        </p>
+        <p class="main">₹20,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://cdn1.smartprix.com/rx-iGh1sqBlX-w1200-h1200/Gh1sqBlX.jpg"
+          alt="Product 2"
+          class="image"
+        />
+        <h4></h4>BOAT BUDS
+        <p class="main">
+          
+Airdopes 131
+Wireless Earbuds with upto 60 Hours Playback, 13mm Drivers, IWP Technology, 650mAh Charging Case 
+        </p>
+        <p class="main">₹2,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="2">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://m.media-amazon.com/images/I/71TLzZlKALL.jpg"
+          alt="Product 3"
+          class="image"
+        />
+        <h4>SONY BUDS</h4>
+        <p class="main">
+          
+Sony WF-XB700 Truly Wireless Extra Bass Bluetooth EarBuds (Blue)
+        </p>
+        <p class="main">₹11,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://i.gadgets360cdn.com/products/large/Skullcandy-Indy-ANC-tws-DB-478x800-1616665987.jpg?downsize=*:360"
+          alt="Product41"
+          class="image"
+        />
+        <h4>SKULLCANDY BUDS</h4>
+        <p class="main">
+          Skullcandy Grind True Wireless in-Ear Bluetooth Earbuds Compatible with iPhone and Android Charging Case and Microphone Great for Gym,Sports,and Gaming IP55 Water Dust Resistant
+        </p>
+        <p class="main">₹7,299</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-between">
+      <div class="bg shadow">
+        <img
+          src="https://images.philips.com/is/image/PhilipsConsumer/TAT4506BK_00-IMS-en_IN?$jpglarge$&wid=1250"
+          class="image"
+        />
+        <h4>PHILIPS BUDS</h4>
+        <p class="main">
+        Philips Audio Tws Tat4205 Bluetooth Truly Wireless In Ear Earbuds With Mic, Ipx5, Touch Control, 20 Hr Playtime (5+15), C-Type Charging (Black) 
+        </p>
+        <p class="main">₹6,799</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://www.nepal.ubuy.com/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9hc3IvZGNkMzg1MWUtNDRjMy00MzFkLWFhZTAtNDNiOGI4ZWRlYTI2LjUxNjg3ODhmZTRjNmFkYjBlNjg2MDEwYzdjMjYxZGJhLmpwZWc.jpg"
+          alt="Product 2"
+          class="image"
+        />
+        <h4>JBL BUDS</h4>
+        <p class="main">
+          JBL Wave 300 TWS, 26Hr Playtime, Open-Ear Design, JBL Epic Sound, Touch Control Bluetooth Headset (Black, True Wireless) 
+        </p>
+        <p class="main">₹7,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="2">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://m.media-amazon.com/images/I/51hr-iGexrL._AC_UF1000,1000_QL80_.jpg"
+          alt="Product 3"
+          class="image"
+        />
+        <h4>NOISE BUDS</h4>
+        <p class="main">
+          Noise Buds Connect Truly Wireless in Ear Earbuds with 50H Playtime, Quad Mic with ENC
+        </p>
+        <p class="main">₹1,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://cdn1.smartprix.com/rx-ieGOWnB3q-w420-h420/realme-buds-air-3-tr.jpg"
+          alt="Product41"
+          class="image"
+        />
+        <h4>REALME BUDS</h4>
+        <p class="main">
+         
+Realme Buds Air 3 Neo True Wireless in-Ear Earbuds with Mic (Starry Blue)
+        </p>
+        <p class="main">₹1,799</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <h1 class="follow-us-section-heading mx-5">Follow Us</h1>
+
+    <div class="d-flex flex-row justify-content-center">
+      <div class="follow-us-icon-container">
+        <i class="clr fab fa-twitter icon"></i>
+      </div>
+      <div class="follow-us-icon-container">
+        <i class="clr fab fa-instagram icon"></i>
+      </div>
+      <div class="follow-us-icon-container">
+        <i class="clr fab fa-facebook icon"></i>
+      </div>
+    </div>
+
+    <div id="contact" class="footer-section pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              src="data:image/png;base64,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"
+              class="imagesize"
+            />
+            <h1 class="footer-section-mail-id">orderbuds@shop.com</h1>
+            <p class="footer-section-address">
+              1437, Rajamendry, India.
+            </p>
+            <p class="footer-section-address">
+              Contact details: 1850 6000 8009
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/20c5629a29.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

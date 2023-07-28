@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <title>Running Shoes</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#">
+        <img
+          class="imagesize"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUAAAD///+pqamSkpJ5eXmAgIDMzMz09PTr6+v8/Py+vr7n5+fd3d0qKiomJiYJCQm4uLibm5tubm5KSkplZWVbW1sdHR2UlJT29vYSEhIyMjLT09Ph4eGEhISdnZ2JiYlQUFA8PDyurq5zc3NYWFhFRUXOzs45OTkXFxdqampBvGtEAAAJCUlEQVR4nO2c6ZqqMAyGKSo7goILgoLr6P3f4KEFJYUiroDnyftnZhiWfrRN06RFkhAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQf4/nCBwnK4L8R2crR/La/+QeNuVbY/nwf+l0/ENZTdc8cf+o7qcb7Rw2nUhvkm8jGbsl+NwY1iRaZqRpcjx3uu4XJ/COZEN/ZnsNJ1w6Gokj1ZN1/ceWyOX9MfBImJ0bffbDXisEtpC3Rp9Oae463K+TkTWkrQyy5KW4W6zGAwWm52St93TMOi6rC8hE4U1VA5rcORO2g431jJtr8aho1K+wZGQ1JLwXTCcic4M/E1EiBmP2y7im7hkJ0kLTuCi/uxjbBF9d6w/oX/YS5KWlxPYYDf/FiZRfqixDoklSRMocNR8UWIQS9iQ+4hBZEmCZsZ47LqBGv1IPUbEl+ZwdP979MqpGSZfLNinGOtpN9wDhcoTF89CY/u1kn2KP6KOuW44fOrymSLbXyrZp/CI6aRjftFInx0IfKPn3lxCTEnaFQrV5/2y6c7/QsE+hkcVgjrUXriHM9r0uKluiRZIm/cUStI8fq77tsmKqLYUv6swfVOLvlbjWSWeNHurH+Zc+tobrXTEB27p07a0YOz3M9phkAHntV3euJd37GPscU29GBDAmLxzs/lx/qlyfQ425AO3LXzvdqseTo9Nfn64fLMzBf2T6NIpvVJI3L97w94lO3w6BZ4WCk9dF+jjOBqNRKmFxIcniD/Djkb0gWuazvmPo+E9SoGc9Wg0WteM9wf6zzLTpN3O6hE1tYFFvkKl3updVO76UXZQfPNdzR3CUZvB5ZAO80bx+Lgpws87r3mwfCC8t1x/k3Ub2jKm1NYcuSpa6bUlKyv0hRV7pV5hatPaq0aTJFwlDu6XjFd4i5YLo5D379Nad9xTT2YLqi0d1LT6gnEKk9tRU3Truwpr6v0bmDS9Bgrj0kjxYwqBryCKld9X+K6P+Dg+fVQAxkSPK/odhduG4jYoJK2Zm5A6a6PiwanpWS0fUcgZXUGgv0nhqzGFp2EBKZhiG9B5VXOxeJsriCY3KXwkS/IZdnRiuCoevNzeaaeFwpKAaoAAniAcgVrriXOVJiwm3JMd2wapbyOwbxRX8cV17ym0nHGGDxPqWmtz5iGbVETFo1maFCoUXDQoVYheCbhBhcVR2MXby2ApbL2Czj3aAaOiSGFl0JTLZ4gVwkTJO4Gh57CXxObMi+pwjo5AYXXMXJZnv2KFPrjk7Rn347BsMNREu2LRbAUKQZu+Uva/xQrhq2mvDunYlk4UA9D10j+3N1tSVQhr4lbxpXPECsFrJMk3JZXR6JidgK44BDKqCkOBwnL+UagQVmFrQz5jS9Q593w9Kf6sKITzreKtlPxvmNZaTBgb7s3sWtKWM2IDMCiVat/W2lQUgqY2Bd4QH85o9GnaXpqzY+/0VBTAdK6lLCsEyxs0WO8Wd1aTwparUKJ9iyatgbWhleqKFAKfe8PF6rghvEGhJbXOnFmbMRjKqTttVBWeizP0lQSTrJz/fV+h3kWaw9P11On2gF9FnU2johBIov+BS3Jg12qoQ62LpOOFGVQfjBm0rxglhQ5olmxaCOwO9L/7M3sCjEgkSdwqIiaRn/yBxHjEDmyLAzpI7jQqFE2bv86CmRcw42cS+SgMsEV5IAIMGMD/blYoDGB9G7ZqGFZTxahDryA/BJI76hzcqpEu2mk6EtBeByWW5raiCgP2t1iCCxRGWy8nAWaqxVk+h8EkQYmcoYE+9y1wLVyzIva8JQ/cYNlNZrwqMQRTP+D0RP4+Ywr96Zv/XaOQi9F1lM7LhgcYbzNv7zohTUTXU+sUgl5LktZE8WQSYcWox9u/GrmO5HUKwSIlkrSoisNlFvUChn49m4/bzQJvcuoUwkhNd6twZVYoOCNmbnnT9qEM73oPsUIYw+pwRdyE9T0bBkWp/ZnVx/sLchdIrNCGG1gi4bNbYp31PVge65zOK4TxixJZ24PLj9UrfPD7wc0BX8IkOrUZ0LSoB+khV8UtK6yjxXBiFYe6n9Tv5JwQ2hkvak15iypbPaawvbB+rULmlw1hyzJSP2Z8J7+YIT+mcNOlwFwhsxoetH4mbakxWSplgLOT+d+NCs1utzTmComZtjiHqzTqWx8Fae2wdE6jwo63Fl0VZvaG2/8Vit899Mmp/92ksFMzIwGFWXc5cOZFvDwf5gZHjZGozjfAAYVESSvtDPsZUUTLYWD0I2pQqHS/ohjmD4mapEcG0KYuRdNzUM/Lcd26NrYDvhdfM1gvBlcmOjMdHpdSO1W9Zv92ySIOwF8c62kfN9quInKiTjLX8PRuh7NPIxOVDhAHbuu++WJQt59fTfH1zN3k7Yfy0uJ3u39L3imBkhmcI5/gfiWD5PV1+2nqoDI9MTcF0u9s4a9h70m9bKeSNFeyfMqcj9aoz67Bkz2p++GwhqFKDGpUff5TE1r8lBMdbqW+buhLZ04uWbKITcwvGdIWj9dKoo6lvvZEyiwiVpL+PG/4iIQqPxreNVK/vBdOTS1xOhGmNTYu+2XKQ+PjjE46k+8W8W3cfCufXQ4Qa5PGDnlWaXCkv5uHc/5CojMLOq5EUMP7KTNbpWGccZsLvl4ktaYam8PaciWGqsS1rs5IZzHE3/iG2D4iEdMYTKr7Fyz3UjWX8yEdZOhyiF9x2vcmibI2ORQFiiNlsj9ss1Ek+JutlexFpD7QpZPk70tM07Y6YMbFk8UbUZaaSdFuTZnGuY1zx+V+hplC9B1rkMGlMY6aC9z8ThUyVumwmH9Z8jxsEknd9FG36YqXWJtEl3PzeHHro/4hrexhByvaPsBxpxNzkYu0Y7f8mUnaI13mqsmdptTe4mLoJNp4+cwv8GNZ0VR1maKqprHIPLqZ+YNNFHBxNaIpQxBMc8arlX2znJdQ++0vaVKS+KQS7bSoxAxXe1eLWtwe+00Cb2RYy3QkDN3NIF6v1/HEtVTVkpOuS/ZRgtVhLRtKaKWcFHfd8i51BEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQ5DP8A6q6bF9oOAOUAAAAAElFTkSuQmCC"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link size" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link size" href="#productSection">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link size" href="#cat">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link size" href="#new">New Arrivals</a>
+          </li>
+          <div>
+            <li class="nav-item">
+              <a class="nav-link size" href="#contact">Contact us</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="ml-auto">
+        <p>
+          <a href="#cart">
+            <img
+              class="imagesize1"
+              src="data:image/png;base64,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"
+            />
+          </a>
+        </p>
+      </div>
+    </nav>
+    <h1 class="heading mt-4">TABS</h1>
+
+    <div class="d-flex flex-row justify-content-between">
+      <div class="bg shadow">
+        <img
+          src="https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipad-pro-spring21_hero_04202021_big.jpg.large.jpg"
+          alt="Product 1"
+          class="image"
+        />
+        <h4>IPAD</h4>
+        <p class="main">
+          Apple 2022 12.9-inch iPad Pro (Wi-Fi, 512GB) - Space Grey (6th Generation)
+        </p>
+        <p class="main">₹1,42,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://image-us.samsung.com/SamsungUS/home/mobile/tablets/tab-s6/sm-p610nz/angora-blue/gallery/1-SM-P615_008_Dynamic_Blue-Gallery-1600x1200.jpg?$product-details-jpg$"
+          alt="Product 2"
+          class="image"
+        />
+        <h4>SAMSUNG TAB</h4>
+        <p class="main">
+         
+Samsung Galaxy Tab S8 11-inches Wi-Fi Tablet (Graphite, 128GB, 8GB RAM)
+        </p>
+        <p class="main">₹61,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="2">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://www.digitaldreamsjaipur.com/wp-content/uploads/2020/06/Lenovo-Tab-M8-HD.jpg"
+          alt="Product 3"
+          class="image"
+        />
+        <h4>LENOVO TAB</h4>
+        <p class="main">
+          Buy Lenovo Tab M8 HD tablet, Android 9.0, 5 MP / 2MP camera - Digital Dream
+        </p>
+        <p class="main">₹21,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://i.gadgets360cdn.com/products/large/realme-pad-mini-588x798-1649137838.jpg"
+          alt="Product41"
+          class="image"
+        />
+        <h4>REALMI TAB</h4>
+        <p class="main">
+          
+Realme Pad X 10.95 inches Wi-Fi+5G Tablet (Glowing Grey, 64GB, 4GB RAM)
+        </p>
+        <p class="main">₹29,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-between">
+      <div class="bg shadow">
+        <img
+          src="https://s3b.cashify.in/gpro/uploads/2022/09/04170300/xiaomi-redmi-pad-back-display.jpg"
+          alt="Product 1"
+          class="image"
+        />
+        <h4>REDMI TAB</h4>
+        <p class="main">
+          Redmi Pad | MediaTek Helio G99 | 26.95cm (10.61 inch) 2K Resolution & 90Hz Refresh Rate Display | 6GB RAM & 128GB Storage, Expandable up to 1TB | Quad Speaker - Dolby Atmos
+        </p>
+        <p class="main">₹19,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://5.imimg.com/data5/SELLER/Default/2023/5/309197816/EJ/MW/UC/18942538/nokia-t20-8200mah-battery-3gb-ram-bluetooth-wi-fi-10-36-inches-wi-fi-tab-blue-.jpg"
+          alt="Product 2"
+          class="image"
+        />
+        <h4>NOKIA TAB</h4>
+        <p class="main">
+          Nokia T10 Android 12 Tablet with 8 Inches Hd Display, 8Mp Rear Camera, Ai Face Unlock, All-Day Battery, WiFi + 4G Volte | 4 + 64Gb, Blue 
+        </p>
+        <p class="main">₹12,599</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="2">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://m.media-amazon.com/images/I/51yvmww0oWL._AC_UF1000,1000_QL80_.jpg"
+          alt="Product 3"
+          class="image"
+        />
+        <h4>ACER TAB</h4>
+        <p class="main">
+          Acer One 8 T4-82L WiFi + 4G LTE Tablet (Black, 32GB, 2GB RAM)
+        </p>
+        <p class="main">₹13,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+      <div class="bg shadow">
+        <img
+          src="https://rukminim2.flixcart.com/image/850/1000/jp8ngcw0/computer/m/g/h/microsoft-na-2-in-1-laptop-original-imafbgqzhjhmthh2.jpeg?q=20"
+          alt="Product41"
+          class="image"
+        />
+        <h4>MICROSOFT TAB</h4>
+        <p class="main">
+          Microsoft Surface Pro7+ TFN-00013 Intel Quad-Core 12.3 Inches Notebook Laptop (8GB/128GB SSD/Windows 11/Platinum/1.66 Kg)
+        </p>
+        <p class="main">₹93,999</p>
+        <button class="btn btn-primary add-to-cart-btn" data-id="1">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <h1 class="follow-us-section-heading mx-5">Follow Us</h1>
+
+    <div class="d-flex flex-row justify-content-center">
+      <div class="follow-us-icon-container">
+        <i class="clr fab fa-twitter icon"></i>
+      </div>
+      <div class="follow-us-icon-container">
+        <i class="clr fab fa-instagram icon"></i>
+      </div>
+      <div class="follow-us-icon-container">
+        <i class="clr fab fa-facebook icon"></i>
+      </div>
+    </div>
+
+    <div id="contact" class="footer-section pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              src="data:image/png;base64,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"
+              class="imagesize"
+            />
+            <h1 class="footer-section-mail-id">ordertab@shop.com</h1>
+            <p class="footer-section-address">
+              1437,Rajamendry, India.
+            </p>
+            <p class="footer-section-address">
+              Contact details: 1850 6000 8009
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/20c5629a29.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
